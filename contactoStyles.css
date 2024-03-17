@@ -1,0 +1,199 @@
+ *
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contacto
+{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body 
+{
+  background-image: url('img/celu.jpg');
+  background-size: 100% 100%; /* Cubre todo el fondo, tanto horizontal como verticalmente */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.contacto .contac
+{
+  max-width: 90%;
+  text-align: center;
+}
+
+.contacto .contac h2
+{
+  font-size: 33px;
+  font-weight: 300;
+  color: #fff;
+  margin-top: -46px;
+}
+
+.contenedor
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor .infocontacto
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor .infocontacto .caja
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contenedor .infocontacto .caja .icon
+{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+
+}
+
+.contenedor .infocontacto .caja .texto
+{
+  display: flex;
+  margin-left: 23px;
+  font-size: 19px;
+  color: #676767;
+  flex-direction: column;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.contenedor .infocontacto .caja .texto h3
+{
+  font-weight: 500;
+  color: #007fd4;
+}
+
+.formulariocont
+{
+  width: 40%;
+  padding: 40PX;
+  background: #FFF;
+  border-radius: 8px;
+}
+
+.formulariocont h2
+{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.formulariocont .cajaentrada
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.formulariocont .cajaentrada input,
+.formulariocont .cajaentrada textarea
+{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.formulariocont .cajaentrada span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.formulariocont .cajaentrada input:focus ~ span,
+.formulariocont .cajaentrada input:valid ~ span,
+.formulariocont .cajaentrada textarea:focus ~ span,
+.formulariocont .cajaentrada textarea:valid ~ span
+{
+  color: #00bcd4;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.formulariocont .cajaentrada input[type="submit"]
+{
+  width: 100px;
+  background: #007fd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contac {
+  flex: 1 1 50%; /* El contenido de contacto ocupará el 50% del ancho */
+}
+
+.contenedor {
+  flex: 6 1 50%; /* El contenedor de información de contacto ocupará el otro 50% del ancho */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infocontacto {
+  flex: 1 1 50%; /* Cada caja de información ocupará el 50% del ancho */
+}
+
+.formulariocont {
+  flex: 1 1 15%; /* El formulario ocupará el 50% del ancho */
+}
+
+@media (max-width: 900px) {
+  .infocontacto,
+  .formulariocont {
+    flex: 1 1 100%; /* Cambiar a ocupar el 100% del ancho en pantallas más pequeñas */
+    padding: 9px;
+    max-width: 100%;
+  }
+
+  .formulariocont h2 {
+    font-size: 25px;
+
+  }
+}

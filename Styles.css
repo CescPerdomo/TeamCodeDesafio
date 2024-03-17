@@ -1,0 +1,47 @@
+/* Estilos personalizados para la página */
+
+/* Ajustes generales */
+body {
+    padding-top: 0px; /* Para compensar la altura de la barra de navegación fija */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #333;
+  }
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  /* Estilos para el carrusel */
+  #carouselSection {
+    margin-top: 5px;
+  }
+  
+  /* Estilos para los productos destacados */
+  #featuredProducts {
+    margin-top: 5px;
+  }
+  
+  .card {
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+  }
+  
+  .card:hover {
+    transform: translateY(
+      -30px
+    ); /* Levanta un poco la tarjeta al pasar el ratón */
+  }
+  
+  .card-img-top {
+    height: 300px; /* Altura fija para las imágenes de los productos */
+  }
+
+  .additional-info {
+    display: none; /* Oculta la información adicional por defecto */
+  }
+  
+  .ver-detalles-btn:focus + .additional-info,
+  .ver-detalles-btn:active + .additional-info {
+    display: block; /* Muestra la información adicional cuando el botón es enfocado o activo */
+  }
+  
+  

@@ -1,0 +1,75 @@
+body {
+    background-image: url('fondo_inicio.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .welcome {
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 200px;
+    opacity: 0; /* Añadido para ocultar inicialmente el contenido */
+    animation: fadeIn 1s ease-in-out forwards; /* Añadido para la animación de aparición */
+  }
+  
+  .welcome h1, .welcome h3, .welcome ul li {
+    opacity: 0; /* Añadido para ocultar inicialmente cada elemento */
+    animation: fadeIn 1s ease-in-out forwards; /* Añadido para la animación de aparición */
+  }
+  
+  .welcome h1 {
+    animation-delay: 0.5s; /* Retrasa la aparición de la palabra "Bienvenidos" */
+  }
+  
+  .welcome h3 {
+    animation-delay: 1s; /* Retrasa la aparición del subtítulo */
+  }
+  
+  .welcome ul li:nth-child(1) {
+    animation-delay: 1.5s; /* Retrasa la aparición del primer elemento de la lista */
+  }
+  
+  .welcome ul li:nth-child(2) {
+    animation-delay: 2s; /* Retrasa la aparición del segundo elemento de la lista */
+  }
+  
+  .welcome ul li:nth-child(3) {
+    animation-delay: 2.5s; /* Retrasa la aparición del tercer elemento de la lista */
+  }
+  
+  .welcome ul li:nth-child(4) {
+    animation-delay: 3s; /* Retrasa la aparición del cuarto elemento de la lista */
+  }
+  
+  .welcome ul li:nth-child(5) {
+    animation-delay: 3.5s; /* Retrasa la aparición del quinto elemento de la lista */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .navbar {
+    background-color: #343a40;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f8f9fa;
+  }

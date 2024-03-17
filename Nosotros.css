@@ -1,0 +1,91 @@
+/* Estilos personalizados para la página */
+
+/* Ajustes generales */
+body {
+    padding-top: 0px; /* Para compensar la altura de la barra de navegación fija */
+}
+
+/* Estilos para el carrusel */
+#carouselSection {
+    margin-top: 5px;
+}
+
+/* Estilos para los productos destacados */
+#featuredProducts {
+    margin-top: 5px;
+}
+
+.card {
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+}
+
+.card:hover {
+    transform: translateY(-30px); /* Levanta un poco la tarjeta al pasar el ratón */
+}
+
+.card-img-top {
+    height: 200px; /* Altura fija para las imágenes de los productos */
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between; /* Esto alinea los elementos a los lados del contenedor */
+    background-color: azure;
+}
+
+.contenedor img {
+    width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Esto mantiene la proporción de la imagen */
+}
+
+.mi-seccion {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+    padding: 15px;
+    text-align: center;
+}
+
+table {
+    margin: 192px 133px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 9px 11px;
+}
+
+.mapa {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.button {
+    width: 40%;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #2b3499;
+    border: none;
+    border-radius: 5px;
+    transition: background 1s, transform 1s; /* Corrección de la transición */
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ff6c22;
+    transform: scale(1.2);
+}
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Virtual</title>
+  <!-- ver Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- ver archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">TeamCode</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Catálogo de Productos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="accesorios.html">Accesorios</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Carritodecompras.html">Carrito de Compras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <a href="Inicio.html" class="btn btn-primary">Volver a Inicio</a>
+  </div>
+
+  <!-- Contenido de la página -->
+  <div class="container mt-3">
+    <!-- Carrusel de Productos Destacados -->
+    <section id="carouselSection">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Samsung.jpg" class="d-block w-25 mx-auto" alt="Samsung">
+            <div class="carousel-caption text-black">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Apple.jpg" class="d-block w-25 mx-auto" alt="Apple">
+            <div class="carousel-caption text-black">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Xiaomi.jpg" class="d-block w-25 mx-auto" alt="Xiaomi">
+            <div class="carousel-caption text-black">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Motorola.jpg" class="d-block w-25 mx-auto" alt="Motorola">
+            <div class="carousel-caption text-black">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Sección de Productos Destacados -->
+    <section id="featuredProducts">
+      <h2 class="text-center mb-4">Lo mas vendido</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="Samsung.jpg" class="card-img-top" alt="Samsung">
+            <div class="card-body">
+              <h5 class="card-title">Samsung</h5>
+              <p class="card-text">Descripcion</p>
+              <a href="#" class="btn btn-primary ver-detalles-btn" data-target="additional-info-1">Ver Detalles</a>
+              <div id="additional-info-1" class="additional-info">
+                <p>Precio: $1200</p>
+                <p>Disponibilidad: En Stock</p>
+                <p>Especificaciones técnicas:</p>
+                <ul>
+                  <li>Samsung S24 Ultra</li>
+                  <li>Almacenamiento: 128GB</li>
+                  <li>Procesador: Snapdragon 8 Gen 1 3GHz / Exynos 2200 2.8GHz</li>
+                </ul>
+              </div>
+              <div class="container mt-3">
+                <a href="s24ultra.html" class="btn btn-outline-secondary">Mas informacion</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="Apple.jpg" class="card-img-top" alt="Apple">
+            <div class="card-body">
+              <h5 class="card-title">Apple</h5>
+              <p class="card-text">Descripción</p>
+              <a href="#" class="btn btn-primary ver-detalles-btn" data-target="additional-info-1">Ver Detalles</a>
+              <div id="additional-info-2" class="additional-info">
+                <p>Precio: $1600</p>
+                <p>Disponibilidad: En Stock</p>
+                <p>Especificaciones técnicas:</p>
+                <ul>
+                  <li>Iphone 13 Pro-Max</li>
+                  <li>Almacenamiento: 128GB</li>
+                  <li>Cámara: Cuádruple, 12MP+12MP +12MP+TOF 3D</li>
+                </ul>
+              </div>
+              <div class="container mt-3">
+                <a href="iphone13pro.html" class="btn btn-outline-secondary">Mas informacion</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="Xiaomi.jpg" class="card-img-top" alt="Xiaomi">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi</h5>
+              <p class="card-text">Descripcion</p>
+              <a href="#" class="btn btn-primary ver-detalles-btn" data-target="additional-info-1">Ver Detalles</a>
+              <div id="additional-info-3" class="additional-info">
+                <p>Precio: $900</p>
+                <p>Disponibilidad: En Stock</p>
+                <p>Especificaciones técnicas:</p>
+                <ul>
+                  <li>Xiaomi Redmi Note 12 Pro</li>
+                  <li>Pantalla: 6.67", 1080 x 2400 pixels</li>
+                  <li>Batería: 5000 mAh</li>
+                </ul>
+              </div>
+              <div class="container mt-3">
+                <a href="redmi12.html" class="btn btn-outline-secondary">Mas informacion</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="Motorola.jpg" class="card-img-top" alt="Motorola">
+            <div class="card-body">
+              <h5 class="card-title">Motorola</h5>
+              <p class="card-text">Descripción</p>
+              <a href="#" class="btn btn-primary ver-detalles-btn" data-target="additional-info-1">Ver Detalles</a>
+              <div id="additional-info-4" class="additional-info">
+                <p>Precio: $800</p>
+                <p>Disponibilidad: En Stock</p>
+                <p>Especificaciones técnicas:</p>
+                <ul>
+                  <li>Moto G24 Power</li>
+                  <li>Procesador: Mediatek Helio G85 2GHz</li>
+                  <li>RAM: 4GB/6GB</li>
+                </ul>
+              </div>
+              <div class="container mt-3">
+                <a href="motog22.html" class="btn btn-outline-secondary">Mas informacion</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

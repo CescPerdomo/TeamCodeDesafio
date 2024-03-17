@@ -1,0 +1,30 @@
+/* Estilos personalizados para la página */
+
+/* Ajustes generales */
+body {
+    padding-top: 0px; /* Para compensar la altura de la barra de navegación fija */
+  }
+  
+  /* Estilos para el carrusel */
+  #carouselSection {
+    margin-top: 5px;
+  }
+  
+  /* Estilos para los productos destacados */
+  #featuredProducts {
+    margin-top: 5px;
+  }
+  
+  .card {
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+  }
+  
+  .card:hover {
+    transform: translateY(
+      -30px
+    ); /* Levanta un poco la tarjeta al pasar el ratón */
+  }
+  
+  .card-img-top {
+    height: 200px; /* Altura fija para las imágenes de los productos */
+  }
